@@ -26,6 +26,7 @@ public class Message {
     }
 
     public Message() {
+        
     }
 
     public Integer getId() {
