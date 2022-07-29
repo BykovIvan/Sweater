@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <div>
+        <form>
+            <input type="text" name="text" placeholder="Add message"/>
+            <input type="text" name="tag" placeholder="Tag"/>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div>List Message</div>
+    {{#masseges}}
+        <div>
+            <b>{{id}}</b>
+            <span>{{text}}</span>
+            <i>{{tag}}</i>
+        </div>
+        <b>{{name}}</b>
+    {{/masseges}}
+</body>
+</html>
