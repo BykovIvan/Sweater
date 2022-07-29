@@ -15,9 +15,7 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Value("text")
     private String text;
-    @Value("tag")
     private String tag;
 
     public Message(String text, String tag) {
