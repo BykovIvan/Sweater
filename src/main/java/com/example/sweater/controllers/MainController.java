@@ -33,7 +33,10 @@ public class MainController {
 
     @PostMapping("/main")
     public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model){
-        Message message = new Message(text, tag);
+        Message message = Message.builder()
+                .text(text)
+                .tag(tag)
+                .build();
         messageRepo.save(message);
 
         Iterable<Message> messages = messageRepo.findAll();
